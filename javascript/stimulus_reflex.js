@@ -63,6 +63,7 @@ const initialize = (
   const observer = new MutationObserver(setupDeclarativeReflexes)
   observer.observe(document.documentElement, {
     attributeFilter: [Schema.reflex, Schema.action],
+    attributes:true,
     childList: true,
     subtree: true
   })
